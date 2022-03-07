@@ -18,12 +18,12 @@ var xml = new XMLHttpRequest();
     
     
 
-    xml.open("POST", "http://localhost/praticando2/comentar.php", false);
+    xml.open("POST", "http://localhost/sistemas-comentarios/comentar.php", false);
     xml.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xml.send(`dados=${pessoaString}`);
 
     if(xml.responseText == 1){
-        alert("inserido");
+        
         var box_comment = document.querySelector(".box_comment");
             
             boxTemporaria = box_comment.innerHTML;
@@ -34,8 +34,6 @@ var xml = new XMLHttpRequest();
             boxTemporaria = boxNovo + boxTemporaria;
 
             box_comment.innerHTML = boxTemporaria;
-        
-        
         
         
 

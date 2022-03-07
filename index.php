@@ -21,7 +21,24 @@
 			</form>
 		</div>
 
-		<div class="box_comment">	
+		<div class="box_comment">
+
+		</div>
+
+		<div class="box_comment">
+						<?php 
+			    $pdo = new PDO('mysql:host=localhost; dbname=praticando;', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+			    $stmt = $pdo->query('SELECT * FROM comentarios');
+
+			    $comment = $stmt->fetchAll(PDO::FETCH_CLASS);
+			  
+			    foreach($comment as $comentario):
+			?>
+				<h1><?php echo $comentario->nome; ?></h1>
+				<h4><?php echo $comentario->comment; ?></h4>
+			<?php endforeach; ?>
+
+
 		</div>
 	</section>
 	

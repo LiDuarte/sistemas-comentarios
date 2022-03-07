@@ -85,6 +85,7 @@ div.box_form > form > input.btn-sub:hover{
 }
 
 .box_comment{
+	margin-top: 10px;
 	border-bottom: 1px solid #DDD;
 	padding: 15px 25px;
 	background: #F5F5F5;
@@ -97,3 +98,4 @@ div.box_form > form > input.btn-sub:hover{
 	border-radius: 3px;
 	padding: 10px 15px;
 }
+
