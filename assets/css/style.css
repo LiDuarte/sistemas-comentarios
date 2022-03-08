@@ -93,9 +93,8 @@ div.box_form > form > input.btn-sub:hover{
 
 .box_comment h4{
 	border: 0px solid #ddd;
-	margin-top: 4px;
+	margin-top: 0px;
 	color:#666;
 	border-radius: 3px;
-	padding: 10px 15px;
+	padding: 0px 0px;
 }
-

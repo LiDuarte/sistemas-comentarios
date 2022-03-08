@@ -25,18 +25,17 @@ var xml = new XMLHttpRequest();
     if(xml.responseText == 1){
         
         var box_comment = document.querySelector(".box_comment");
+        document.querySelector("#formComment").reset();
             
             boxTemporaria = box_comment.innerHTML;
 
-            boxNovo = `<h2>${pessoa.nome}</h2>
-            <h4>${pessoa.comment}</h4>`;
+            boxNovo = `<div class="box_comment"><h2>${pessoa.nome}</h2>
+            <h4>${pessoa.comment}</h4></div>`;
 
             boxTemporaria = boxNovo + boxTemporaria;
 
             box_comment.innerHTML = boxTemporaria;
         
-        
-
     }
 
         
